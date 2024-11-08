@@ -16,10 +16,8 @@ control switching, and flexible leader-follower dynamics for collaborative opera
 underwater agents.
 
 Implementation Scheme
-Modeling: Begin by developing accurate mathematical models for both surface and underwater
-dynamics of your vehicles.
-• Simulation: Utilize simulation environments (like MATLAB/Simulink, Gazebo, or ROS) to test
-control strategies in virtual scenarios before deploying on actual vehicles.
+• Modeling: Begin by developing accurate mathematical models for both surface and underwater  dynamics of your vehicles.
+• Simulation: Utilize simulation environments (like MATLAB/Simulink, Gazebo, or ROS) to test control strategies in virtual scenarios before deploying on actual vehicles.
 • Hardware Integration: Once simulations yield satisfactory results, implement the control strategies
 on the physical vehicles, ensuring to integrate with sensors and actuators for real-time feedback.
 • Testing and Validation: Conduct extensive testing in controlled environments, gradually introducing
