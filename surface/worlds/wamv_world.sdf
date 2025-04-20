@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="wamv_world">
+    <include> <uri>coast_waves</uri> </include>
+    <include> <uri>wamv</uri> </include>
+    <include> <uri>seabed</uri> </include>
+    
+
+    <physics name="1ms" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"> </plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"> </plugin>
+    <plugin
+      filename="gz-sim-buoyancy-system"
+      name="gz::sim::systems::Buoyancy">
+      <graded_buoyancy>
+        <default_density>1000</default_density>
+        <density_change>
+          <above_depth>0.5</above_depth>
+          <density>1</density>
+        </density_change>
+      </graded_buoyancy>
+      <enable>wamv</enable>
+    </plugin>
+
+    <!-- Sensors -->
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"> </plugin>
+    <plugin filename="gz-sim-magnetometer-system" name="gz::sim::systems::Magnetometer"> </plugin>
+    <plugin filename="gz-sim-forcetorque-system" name="gz::sim::systems::ForceTorque"> </plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"> </plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"> </plugin>
+    <plugin filename="gz-sim-navsat-system" name="gz::sim::systems::NavSat"> </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <scene>
+      <sky></sky>
+      <grid>false</grid>
+      <ambient>1.0 1.0 1.0</ambient>
+      <background>0.8 0.8 0.8</background>
+    </scene>
+
+    <!-- Estimated latitude/longitude of MIT Sailing from satellite imagery -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>42.35821841111111</latitude_deg>
+      <longitude_deg>-71.0479235555555</longitude_deg>
+      <elevation>0.0</elevation>
+      <heading_deg>0.0</heading_deg>
+    </spherical_coordinates>
+
+    <light type="directional" name="sun">
+      <!-- Set cast_shadows false explicitly because of sky flickering bug with some GPUs -->
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10000 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+  </world>
+</sdf>
