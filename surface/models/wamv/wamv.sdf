@@ -1,0 +1,1143 @@
+<?xml version='1.0'?>
+<sdf version='1.10'>
+  <model name='wamv'>
+    <link name='wamv/base_link'>
+      <inertial>
+        <pose>-0.3 0 0 0 0 0</pose>
+        <mass>130</mass>
+        <inertia>
+          <ixx>200</ixx>
+          <iyy>400</iyy>
+          <izz>400</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/base_link_fixed_joint_lump__left_float_collision'>
+        <pose>-0.40000000000000002 1.03 0.20000000000000001 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>0.20000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__left_mid_float_collision_1'>
+        <pose>1.8500000000000001 1.03 0.29999999999999999 0 1.3799999999999997 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.5</length>
+            <radius>0.17000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__left_front_float_collision_2'>
+        <pose>2.2999999999999998 1.03 0.40000000000000002 0 1.3 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.12</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_left_beam_lower_collision_3'>
+        <pose>0.90000000000000002 0.84999999999999998 1 0.78000000000000003 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.5</length>
+            <radius>0.040000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_left_beam_upper_collision_4'>
+        <pose>0.90000000000000002 0.59999999999999998 1.1799999999999999 1.3500000000000001 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.040000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__mid_left_beam_lower_collision_5'>
+        <pose>-0.65000000000000002 0.98999999999999999 0.69999999999999996 0.099999999999999978 0.25000000000000006 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__mid_left_beam_medium_collision_6'>
+        <pose>-0.56999999999999995 0.87 1.05 0.75000000000000033 0.25000000000000017 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.32000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__mid_left_beam_upper_collision_7'>
+        <pose>-0.55000000000000004 0.65000000000000002 1.1699999999999999 1.3500000000000001 0.25000000000000011 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__rear_left_beam_lower_collision_8'>
+        <pose>-0.73999999999999999 1.03 0.69999999999999996 0 -0.14999999999999999 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__rear_left_beam_medium_collision_9'>
+        <pose>-0.79000000000000004 0.91000000000000003 1.05 0.75000000000000022 -0.14999999999999999 -1.4035390109491176e-17</pose>
+        <geometry>
+          <cylinder>
+            <length>0.32000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__rear_left_beam_upper_collision_10'>
+        <pose>-0.81000000000000005 0.67000000000000004 1.1799999999999999 1.45 -0.14999999999999999 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__left_joint_collision_11'>
+        <pose>0.57999999999999996 1.03 0.59999999999999998 0 -0.59999999999999987 0</pose>
+        <geometry>
+          <box>
+            <size>0.65000000000000002 0.20000000000000001 0.10000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__right_float_collision_12'>
+        <pose>-0.40000000000000002 -1.03 0.20000000000000001 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>0.20000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__right_mid_float_collision_13'>
+        <pose>1.8500000000000001 -1.03 0.29999999999999999 0 1.3799999999999997 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.5</length>
+            <radius>0.17000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__right_front_float_collision_14'>
+        <pose>2.2999999999999998 -1.03 0.40000000000000002 0 1.3 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.12</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_right_beam_lower_collision_15'>
+        <pose>0.90000000000000002 -0.84999999999999998 1 -0.78000000000000003 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.5</length>
+            <radius>0.040000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_right_beam_upper_collision_16'>
+        <pose>0.90000000000000002 -0.59999999999999998 1.1799999999999999 -1.3500000000000001 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.040000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__mid_right_beam_lower_collision_17'>
+        <pose>-0.65000000000000002 -0.98999999999999999 0.69999999999999996 -0.099999999999999978 0.25000000000000006 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__mid_right_beam_medium_collision_18'>
+        <pose>-0.56999999999999995 -0.87 1.05 -0.75000000000000033 0.25000000000000017 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.32000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__mid_right_beam_upper_collision_19'>
+        <pose>-0.55000000000000004 -0.65000000000000002 1.1699999999999999 -1.3500000000000001 0.25000000000000011 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__rear_right_beam_lower_collision_20'>
+        <pose>-0.73999999999999999 -1.03 0.69999999999999996 0 -0.14999999999999999 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__rear_right_beam_medium_collision_21'>
+        <pose>-0.79000000000000004 -0.91000000000000003 1.05 -0.75000000000000022 -0.14999999999999999 1.4035390109491176e-17</pose>
+        <geometry>
+          <cylinder>
+            <length>0.32000000000000001</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__rear_right_beam_upper_collision_22'>
+        <pose>-0.81000000000000005 -0.67000000000000004 1.1799999999999999 -1.45 -0.14999999999999999 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__right_joint_collision_23'>
+        <pose>0.57999999999999996 -1.03 0.59999999999999998 0 -0.59999999999999987 0</pose>
+        <geometry>
+          <box>
+            <size>0.65000000000000002 0.20000000000000001 0.10000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__top_base_collision_24'>
+        <pose>0 0 1.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8500000000000001 1 0.10000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_camera_post_collision_collision_25'>
+        <pose>0.69999999999999996 0.10000000000000001 1.3847499999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.17649999999999999</length>
+            <radius>0.0076</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_camera_post_arm_collision_collision_26'>
+        <pose>0.72999999999999998 0.10000000000000001 1.4730000000000001 -1.2042771838760871 5.5511151231257827e-17 -1.570796326794897</pose>
+        <geometry>
+          <cylinder>
+            <length>0.065000000000000002</length>
+            <radius>0.0080000000000000002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_camera_lens_collision_collision_27'>
+        <pose>0.76738666487320317 0.10000000000000001 1.495341257188155 3.1415926535897931 1.3089969389957472 3.1415926535897931</pose>
+        <geometry>
+          <cylinder>
+            <length>0.042000000000000003</length>
+            <radius>0.014999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__front_camera_box_collision_collision_28'>
+        <pose>0.73019852056107404 0.10000000000000001 1.5053057904246021 0 0.26179938779914941 0</pose>
+        <geometry>
+          <box>
+            <size>0.035999999999999997 0.029999999999999999 0.029999999999999999</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__lidar_wamv_post_collision_collision_33'>
+        <pose>0.62999999999999989 0 1.52325 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45350000000000013</length>
+            <radius>0.0076</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__lidar_wamv_post_arm_collision_collision_34'>
+        <pose>0.65999999999999992 0 1.75 -1.2042771838760871 5.5511151231257827e-17 -1.570796326794897</pose>
+        <geometry>
+          <cylinder>
+            <length>0.065000000000000002</length>
+            <radius>0.0080000000000000002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__lidar_wamv_collision_collision_35'>
+        <pose>0.69999999999999996 0 1.8 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.074999999999999997</length>
+            <radius>0.055</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__left_battery_collision_collision_40'>
+        <pose>0 1 0.59999999999999998 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.59999999999999998 0.40000000000000002 0.31</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/base_link_fixed_joint_lump__right_battery_collision_collision_41'>
+        <pose>0 -1 0.59999999999999998 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.59999999999999998 0.40000000000000002 0.31</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='wamv/base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wamv/meshes/WAMV.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://wamv/materials/WAM-V_Albedo.png</albedo_map>
+              <normal_map>model://wamv/materials/WAM-V_Normal.png</normal_map>
+              <roughness_map>model://wamv/materials/WAM-V_Roughness.png</roughness_map>
+              <metalness_map>model://wamv/materials/WAM-V_Metalness.png</metalness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__wamv/front_camera_post_link_visual_1'>
+        <pose>0.69999999999999996 0.10000000000000001 1.3847499999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.17649999999999999</length>
+            <radius>0.0076</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__front_camera_post_arm_visual_visual_2'>
+        <pose>0.69199999999999995 0.10000000000000001 1.47 -1.0471975511965981 5.5511151231257827e-17 -1.570796326794897</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sensor_post/meshes/sensor_post_arm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__wamv/front_camera_link_visual_3'>
+        <pose>0.71812444773246065 0.10000000000000001 1.5085410284883829 0.26179938779914941 2.7755575615628914e-17 1.570796326794897</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mono_camera/meshes/mono_camera.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://mono_camera/materials/mono_camera_Albedo.png</albedo_map>
+              <normal_map>model://mono_camera/materials/mono_camera_Normal.png</normal_map>
+              <roughness_map>model://mono_camera/materials/mono_camera_Roughness.png</roughness_map>
+              <metalness_map>model://mono_camera/materials/mono_camera_Metalness.png</metalness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__wamv/lidar_wamv_post_link_visual_7'>
+        <pose>0.62999999999999989 0 1.52325 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.45350000000000013</length>
+            <radius>0.0076</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__lidar_wamv_post_arm_visual_visual_8'>
+        <pose>0.62199999999999989 0 1.7470000000000001 -1.0471975511965981 5.5511151231257827e-17 -1.570796326794897</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sensor_post/meshes/sensor_post_arm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__wamv/lidar_wamv_link_visual_9'>
+        <pose>0.69999999999999996 0 1.7649999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://3d_lidar/meshes/3d_lidar.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://3d_lidar/materials/3d_Lidar_Albedo.png</albedo_map>
+              <normal_map>model://3d_lidar/materials/3d_Lidar_Normal.png</normal_map>
+              <roughness_map>model://3d_lidar/materials/3d_Lidar_Roughness.png</roughness_map>
+              <metalness_map>model://3d_lidar/materials/3d_Lidar_Metalness.png</metalness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__wamv/left_battery_link_visual_13'>
+        <pose>0 -0.03000000000000003 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://battery/meshes/battery.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://battery/materials/battery_Albedo.png</albedo_map>
+              <normal_map>model://battery/materials/battery_Normal.png</normal_map>
+              <roughness_map>model://battery/materials/battery_Roughness.png</roughness_map>
+              <metalness_map>model://battery/materials/battery_Metalness.png</metalness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name='wamv/base_link_fixed_joint_lump__wamv/right_battery_link_visual_14'>
+        <pose>0 -2.0299999999999998 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://battery/meshes/battery.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://battery/materials/battery_Albedo.png</albedo_map>
+              <normal_map>model://battery/materials/battery_Normal.png</normal_map>
+              <roughness_map>model://battery/materials/battery_Roughness.png</roughness_map>
+              <metalness_map>model://battery/materials/battery_Metalness.png</metalness_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <sensor name='contact_sensor' type='contact'>
+        <contact>
+          <collision>wamv/base_link_fixed_joint_lump__top_base_collision_24</collision>
+          <collision>wamv/base_link_fixed_joint_lump__left_float_collision</collision>
+          <collision>wamv/base_link_fixed_joint_lump__left_mid_float_collision_1</collision>
+          <collision>wamv/base_link_fixed_joint_lump__left_front_float_collision_2</collision>
+          <collision>wamv/base_link_fixed_joint_lump__right_float_collision_12</collision>
+          <collision>wamv/base_link_fixed_joint_lump__right_mid_float_collision_13</collision>
+          <collision>wamv/base_link_fixed_joint_lump__right_front_float_collision_14</collision>
+          <topic>/wamv/contacts</topic>
+        </contact>
+        <always_on>true</always_on>
+        <update_rate>5</update_rate>
+      </sensor>
+      <sensor name='front_camera_sensor' type='camera'>
+        <update_rate>30</update_rate>
+        <camera name='front_camera_camera'>
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>1280</width>
+            <height>720</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.050000000000000003</near>
+            <far>400</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.0070000000000000001</stddev>
+          </noise>
+        </camera>
+        <pose>0.75 0.10000000000000001 1.5 0 0.261799 0</pose>
+      </sensor>
+      <sensor name='lidar_wamv_sensor' type='gpu_ray'>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>1875</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.1415926535897931</min_angle>
+              <max_angle>3.1415926535897931</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>16</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.26179938779914941</min_angle>
+              <max_angle>0.26179938779914941</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.10000000000000001</min>
+            <max>130</max>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <pose>0.69999999999999996 0 1.8 0 0 0</pose>
+      </sensor>
+    </link>
+    <joint name='wamv/gps_wamv_joint' type='revolute'>
+      <pose relative_to='wamv/base_link'>-0.84999999999999998 0 1.3 0 0 0</pose>
+      <parent>wamv/base_link</parent>
+      <child>wamv/gps_wamv_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>1000</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wamv/gps_wamv_link'>
+      <pose relative_to='wamv/gps_wamv_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.0064580000000000002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0064580000000000002</iyy>
+          <iyz>0</iyz>
+          <izz>0.01125</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/gps_wamv_link_fixed_joint_lump__gps_wamv_collision_base_collision'>
+        <pose>0 0 0.025000000000000001 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.014999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='wamv/gps_wamv_link_fixed_joint_lump__gps_wamv_collision_antenna_collision_1'>
+        <pose>0 0 0.11 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.14999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='wamv/gps_wamv_link_fixed_joint_lump__gps_wamv_visual_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://gps/meshes/gps.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.5 0.0 0.0 1</diffuse>
+          <specular>0.5 0.0 0.0 1</specular>
+          <ambient>0.5 0.0 0.0 1</ambient>
+        </material>
+      </visual>
+      <sensor name='navsat' type='navsat'>
+        <always_on>true</always_on>
+        <update_rate>20</update_rate>
+      </sensor>
+    </link>
+    <joint name='wamv/imu_wamv_joint' type='revolute'>
+      <pose relative_to='wamv/base_link'>0.29999999999999999 -0.20000000000000001 1.3 0 0 0</pose>
+      <parent>wamv/base_link</parent>
+      <child>wamv/imu_wamv_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>1000</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wamv/imu_wamv_link'>
+      <pose relative_to='wamv/imu_wamv_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>5.4199999999999998e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.1039999999999998e-05</iyy>
+          <iyz>0</iyz>
+          <izz>2.6040000000000001e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/imu_wamv_link_fixed_joint_lump__imu_wamv_collision_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000000000000003 0.025000000000000001 0.0050000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='wamv/imu_wamv_link_fixed_joint_lump__imu_wamv_visual_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000000000000003 0.025000000000000001 0.0050000000000000001</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <sensor name='imu_wamv_sensor' type='imu'>
+        <update_rate>100</update_rate>
+        <imu>
+          <angular_velocity>
+            <x>
+              <noise type='gaussian'>
+                <mean>0</mean>
+                <stddev>0.0089999999999999993</stddev>
+                <bias_mean>0.00075000000000000002</bias_mean>
+                <bias_stddev>0.0050000000000000001</bias_stddev>
+                <dynamic_bias_stddev>2.0000000000000002e-05</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>400</dynamic_bias_correlation_time>
+                <precision>0.00025000000000000001</precision>
+              </noise>
+            </x>
+            <y>
+              <noise type='gaussian'>
+                <mean>0</mean>
+                <stddev>0.0089999999999999993</stddev>
+                <bias_mean>0.00075000000000000002</bias_mean>
+                <bias_stddev>0.0050000000000000001</bias_stddev>
+                <dynamic_bias_stddev>2.0000000000000002e-05</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>400</dynamic_bias_correlation_time>
+                <precision>0.00025000000000000001</precision>
+              </noise>
+            </y>
+            <z>
+              <noise type='gaussian'>
+                <mean>0</mean>
+                <stddev>0.0089999999999999993</stddev>
+                <bias_mean>0.00075000000000000002</bias_mean>
+                <bias_stddev>0.0050000000000000001</bias_stddev>
+                <dynamic_bias_stddev>2.0000000000000002e-05</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>400</dynamic_bias_correlation_time>
+                <precision>0.00025000000000000001</precision>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type='gaussian'>
+                <mean>0</mean>
+                <stddev>0.021000000000000001</stddev>
+                <bias_mean>0.050000000000000003</bias_mean>
+                <bias_stddev>0.0074999999999999997</bias_stddev>
+                <dynamic_bias_stddev>0.00037500000000000001</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>175</dynamic_bias_correlation_time>
+                <precision>0.0050000000000000001</precision>
+              </noise>
+            </x>
+            <y>
+              <noise type='gaussian'>
+                <mean>0</mean>
+                <stddev>0.021000000000000001</stddev>
+                <bias_mean>0.050000000000000003</bias_mean>
+                <bias_stddev>0.0074999999999999997</bias_stddev>
+                <dynamic_bias_stddev>0.00037500000000000001</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>175</dynamic_bias_correlation_time>
+                <precision>0.0050000000000000001</precision>
+              </noise>
+            </y>
+            <z>
+              <noise type='gaussian'>
+                <mean>0</mean>
+                <stddev>0.021000000000000001</stddev>
+                <bias_mean>0.050000000000000003</bias_mean>
+                <bias_stddev>0.0074999999999999997</bias_stddev>
+                <dynamic_bias_stddev>0.00037500000000000001</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>175</dynamic_bias_correlation_time>
+                <precision>0.0050000000000000001</precision>
+              </noise>
+            </z>
+          </linear_acceleration>
+          <orientation_reference_frame>
+            <localization>ENU</localization>
+          </orientation_reference_frame>
+        </imu>
+      </sensor>
+    </link>
+    <joint name='wamv/left_chassis_engine_joint' type='fixed'>
+      <pose relative_to='wamv/base_link'>-2.3737759999999999 1.0271349999999999 0.31823699999999999 0 0 0</pose>
+      <axis>
+      <xyz>0 0 1</xyz>
+      <limit>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
+      </limit>
+    </axis>
+      <parent>wamv/base_link</parent>
+      <child>wamv/left_engine_link</child>
+    </joint>
+    <link name='wamv/left_engine_link'>
+      <pose relative_to='wamv/left_chassis_engine_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>15</mass>
+        <inertia>
+          <ixx>0.88924499999999995</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.91112499999999996</iyy>
+          <iyz>0</iyz>
+          <izz>0.078125</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/left_engine_link_fixed_joint_lump__left_engine_vertical_axis_collision_collision'>
+        <pose>-0.16 0 -0.23999999999999999 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.20000000000000001 0.14999999999999999 0.82999999999999996</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/left_engine_link_fixed_joint_lump__left_engine_rear_end_collision_collision_1'>
+        <pose>-0.34000000000000002 0 0.12 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.14999999999999999 0.12</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='wamv/left_engine_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wamv/meshes/engine.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.05 0.05 0.05 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <ambient>0.05 0.05 0.05 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='left_engine_propeller_joint' type='revolute'>
+      <pose relative_to='wamv/left_engine_link'>-0.27815600000000001 0 -0.50937100000000002 0 0 0</pose>
+      <parent>wamv/left_engine_link</parent>
+      <child>wamv/left_propeller_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <damping>0.050000000000000003</damping>
+          <friction>0.050000000000000003</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wamv/left_propeller_link'>
+      <pose relative_to='left_engine_propeller_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.0085450000000000005</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0085450000000000005</iyy>
+          <iyz>0</iyz>
+          <izz>0.0144</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/left_propeller_link_fixed_joint_lump__left_propeller_collision_collision'>
+        <pose>-0.080000000000000002 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.17999999999999999</length>
+            <radius>0.23999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='wamv/left_propeller_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wamv/meshes/propeller.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.5 0.2 0.0 1</diffuse>
+          <specular>0.5 0.2 0.0 1</specular>
+          <ambient>0.5 0.2 0.0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wamv/receiver_pinger_joint' type='revolute'>
+      <pose relative_to='wamv/base_link'>0 0 0 0 0 0</pose>
+      <parent>wamv/base_link</parent>
+      <child>wamv/receiver</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>1000</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wamv/receiver'>
+      <pose relative_to='wamv/receiver_pinger_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>5.4199999999999998e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.1039999999999998e-05</iyy>
+          <iyz>0</iyz>
+          <izz>2.6040000000000001e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='wamv/receiver_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.01</radius>
+          </sphere>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wamv/right_chassis_engine_joint' type='fixed'>
+      <pose relative_to='wamv/base_link'>-2.3737759999999999 -1.0271349999999999 0.31823699999999999 0 0 0</pose>
+      <axis>
+      <xyz>0 0 1</xyz>
+      <limit>
+        <lower>-1.57</lower>
+        <upper>1.57</upper>
+      </limit>
+    </axis>
+      <parent>wamv/base_link</parent>
+      <child>wamv/right_engine_link</child>
+    </joint>
+    <link name='wamv/right_engine_link'>
+      <pose relative_to='wamv/right_chassis_engine_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>15</mass>
+        <inertia>
+          <ixx>0.88924499999999995</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.91112499999999996</iyy>
+          <iyz>0</iyz>
+          <izz>0.078125</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/right_engine_link_fixed_joint_lump__right_engine_vertical_axis_collision_collision'>
+        <pose>-0.16 0 -0.23999999999999999 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.20000000000000001 0.14999999999999999 0.82999999999999996</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='wamv/right_engine_link_fixed_joint_lump__right_engine_rear_end_collision_collision_1'>
+        <pose>-0.34000000000000002 0 0.12 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.14999999999999999 0.12</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='wamv/right_engine_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wamv/meshes/engine.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.05 0.05 0.05 1</diffuse>
+          <specular>0.05 0.05 0.05 1</specular>
+          <ambient>0.05 0.05 0.05 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='right_engine_propeller_joint' type='revolute'>
+      <pose relative_to='wamv/right_engine_link'>-0.27815600000000001 0 -0.50937100000000002 0 0 0</pose>
+      <parent>wamv/right_engine_link</parent>
+      <child>wamv/right_propeller_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <damping>0.050000000000000003</damping>
+          <friction>0.050000000000000003</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wamv/right_propeller_link'>
+      <pose relative_to='right_engine_propeller_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.0085450000000000005</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0085450000000000005</iyy>
+          <iyz>0</iyz>
+          <izz>0.0144</izz>
+        </inertia>
+      </inertial>
+      <collision name='wamv/right_propeller_link_fixed_joint_lump__right_propeller_collision_collision'>
+        <pose>-0.080000000000000002 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.17999999999999999</length>
+            <radius>0.23999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='wamv/right_propeller_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://wamv/meshes/propeller.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.5 0.2 0.0 1</diffuse>
+          <specular>0.5 0.2 0.0 1</specular>
+          <ambient>0.5 0.2 0.0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <enable_wind>true</enable_wind>
+
+    <plugin name='gz::sim::systems::Thruster' filename='gz-sim-thruster-system'>
+      <namespace>wamv</namespace>
+      <joint_name>left_engine_propeller_joint</joint_name>
+      <thrust_coefficient>0.004422</thrust_coefficient>
+      <fluid_density>1000</fluid_density>
+      <propeller_diameter>0.2</propeller_diameter>
+      <max_thrust_cmd>2353.53383667818</max_thrust_cmd>
+       <velocity_control>true</velocity_control>
+    </plugin>
+    <plugin
+      filename="gz-sim-joint-position-controller-system"
+      name="gz::sim::systems::JointPositionController">
+      <joint_name>left_chassis_engine_joint</joint_name>
+      <use_velocity_commands>false</use_velocity_commands>
+      <topic>/wamv/left/thruster/joint/cmd_pos</topic>
+    </plugin> 
+
+
+    <plugin name='gz::sim::systems::Thruster' filename='gz-sim-thruster-system'>
+      <namespace>wamv</namespace>
+      <joint_name>right_engine_propeller_joint</joint_name>
+      <thrust_coefficient>-0.004422</thrust_coefficient>
+      <fluid_density>1000</fluid_density>
+      <propeller_diameter>0.2</propeller_diameter>
+      <max_thrust_cmd>2353.53383667818</max_thrust_cmd>
+      <velocity_control>true</velocity_control>
+    </plugin>
+
+     <plugin
+      filename="gz-sim-joint-position-controller-system"
+      name="gz::sim::systems::JointPositionController">
+      <joint_name>right_chassis_engine_joint</joint_name>
+      <use_velocity_commands>false</use_velocity_commands>
+      <topic>/wamv/right/thruster/joint/cmd_pos</topic>
+    </plugin> 
+    <plugin name='gz::sim::systems::DetachableJoint' filename='gz-sim-detachable-joint-system'>
+      <parent_link>wamv/base_link</parent_link>
+      <child_model>platform</child_model>
+      <child_link>dummy_upper</child_link>
+      <topic>/vrx/release</topic>
+      <suppress_child_warning>true</suppress_child_warning>
+    </plugin>
+
+    <plugin name='gz::sim::systems::PosePublisher' filename='libgz-sim-pose-publisher-system.so'>
+      <publish_link_pose>false</publish_link_pose>
+      <publish_sensor_pose>true</publish_sensor_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
+      <publish_nested_model_pose>false</publish_nested_model_pose>
+      <publish_model_pose>false</publish_model_pose>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <static_publisher>false</static_publisher>
+      <static_update_frequency>1</static_update_frequency>
+    </plugin>
+
+    <plugin name='gz::sim::systems::JointStatePublisher' filename='gz-sim-joint-state-publisher-system'/>
+
+    <plugin name='gz::sim::systems::OdometryPublisher' filename='gz-sim-odometry-publisher-system'>
+      <dimensions>3</dimensions>
+      <odom_publish_frequency>10.0</odom_publish_frequency>
+      <odom_frame>map</odom_frame>
+      <robot_base_frame>wamv/base_link</robot_base_frame>
+    </plugin>
+
+    <plugin name="gz::sim::systems::Hydrodynamics" filename="gz-sim-hydrodynamics-system">
+        <link_name>wamv/base_link</link_name>
+        <water_density>1000</water_density>
+        <xDotU>-4.876161</xDotU>
+        <yDotV>-126.324739</yDotV>
+        <zDotW>-126.324739</zDotW>
+        <kDotP>0</kDotP>
+        <mDotQ>-33.46</mDotQ>
+        <nDotR>-33.46</nDotR>
+        <xUabsU>-6.2282</xUabsU>
+        <xU>0</xU>
+        <yVabsV>-601.27</yVabsV>
+        <yV>0</yV>
+        <zWabsW>-601.27</zWabsW>
+        <zW>0</zW>
+        <kPabsP>-0.1916</kPabsP>
+        <kP>0</kP>
+        <mQabsQ>-632.698957</mQabsQ>
+        <mQ>0</mQ>
+        <nRabsR>-632.698957</nRabsR>
+        <nR>0</nR>
+    </plugin>
+
+    <frame name='wamv/front_camera_to_front_camera_link_optical_joint' attached_to='wamv/front_camera_link'>
+      <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+    </frame>
+    <frame name='wamv/front_camera_link_optical' attached_to='wamv/front_camera_to_front_camera_link_optical_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/front_camera_post_arm_to_front_camera_joint' attached_to='wamv/front_camera_post_arm_link'>
+      <pose>0.02 0 0.027 0 0.26179938779914941 0</pose>
+    </frame>
+    <frame name='wamv/front_camera_link' attached_to='wamv/front_camera_post_arm_to_front_camera_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/front_camera_post_to_front_camera_post_arm_joint' attached_to='wamv/front_camera_post_link'>
+      <pose>0.029999999999999999 0 0.088250000000000078 0 0 0</pose>
+    </frame>
+    <frame name='wamv/front_camera_post_arm_link' attached_to='wamv/front_camera_post_to_front_camera_post_arm_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/base_to_front_camera_post_joint' attached_to='wamv/base_link'>
+      <pose>0.69999999999999996 0.10000000000000001 1.3847499999999999 0 0 0</pose>
+    </frame>
+    <frame name='wamv/front_camera_post_link' attached_to='wamv/base_to_front_camera_post_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/lidar_wamv_post_arm_to_lidar_wamv_joint' attached_to='wamv/lidar_wamv_post_arm_link'>
+      <pose>0.040000000000000001 0 0.050000000000000003 0 0 0</pose>
+    </frame>
+    <frame name='wamv/lidar_wamv_link' attached_to='wamv/lidar_wamv_post_arm_to_lidar_wamv_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/lidar_wamv_post_to_lidar_wamv_post_arm_joint' attached_to='wamv/lidar_wamv_post_link'>
+      <pose>0.029999999999999999 0 0.22675000000000009 0 0 0</pose>
+    </frame>
+    <frame name='wamv/lidar_wamv_post_arm_link' attached_to='wamv/lidar_wamv_post_to_lidar_wamv_post_arm_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/base_to_lidar_wamv_post_joint' attached_to='wamv/base_link'>
+      <pose>0.62999999999999989 0 1.52325 0 0 0</pose>
+    </frame>
+    <frame name='wamv/lidar_wamv_post_link' attached_to='wamv/base_to_lidar_wamv_post_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/left_chasis_battery_joint' attached_to='wamv/base_link'>
+      <pose>0 1 0.45000000000000001 0 0 0</pose>
+    </frame>
+    <frame name='wamv/left_battery_link' attached_to='wamv/left_chasis_battery_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='wamv/right_chasis_battery_joint' attached_to='wamv/base_link'>
+      <pose>0 -1 0.45000000000000001 0 0 0</pose>
+    </frame>
+    <frame name='wamv/right_battery_link' attached_to='wamv/right_chasis_battery_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>
