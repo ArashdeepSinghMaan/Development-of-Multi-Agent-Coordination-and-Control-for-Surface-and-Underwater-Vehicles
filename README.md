@@ -48,5 +48,119 @@ complexity (e.g., obstacles, varying terrains) to validate the robustness of the
 ### Details
     message_type is a ros2 jazzy package including custom message types.
     surface is ros2 jazzy package contains all the major launch files,and nodes.
+
+    Clone these packages into your workspace and build it.
+    Use ros2 launch <package_name> <Launch_file_name_with_extension> for launch files
+    Use ros2 run <package_name> <node name> for nodes
+
+    ros2 launch surface comb_new_launch.py for launching gazebo world
+    ros2 run surface under_study for starting ROAM
+    ros2 run surface new_control for starting DMM
+    ros2 launch surface multi_agent_launch.py  for multi-agent simulation
+    ros2 launch surface multi_agents_launch.py for multi-agent Navigation and decision making
+    ros2 run surface task_publisher for starting task publisher
+    
+
+    
+    Absolutely! Here's the `README.md` content formatted properly for GitHub:
+
+```markdown
+# ROS2 Jazzy Multi-Agent Simulation Project
+
+This repository contains two main ROS2 packages:
+
+- **`message_type`**: Contains custom ROS2 message types.
+- **`surface`**: Contains launch files, nodes, and logic for simulation, control, and decision-making.
+
+---
+
+## 📦 Packages Overview
+
+### `message_type`
+Defines all custom message types used throughout the project.
+
+### `surface`
+The core package for launching Gazebo simulations and running multi-agent systems with obstacle avoidance and decision making.
+
+---
+
+## 🔧 Installation & Build Instructions
+
+1. **Clone the packages into your ROS2 Jazzy workspace:**
+
+   ```bash
+   cd ~/your_ros2_ws/src
+   git clone <repo_url_for_message_type>
+   git clone <repo_url_for_surface>
+   ```
+
+2. **Build the workspace:**
+
+   ```bash
+   cd ~/your_ros2_ws
+   colcon build
+   ```
+
+3. **Source the workspace:**
+
+   ```bash
+   source install/setup.bash
+   ```
+
+---
+
+## 🚀 Usage
+
+### 🏞️ Launch the Gazebo World
+
+```bash
+ros2 launch surface comb_new_launch.py
+```
+
+### 🧭 Run Control & Planning Nodes
+
+- **Start ROAM (Reference Optimal Attractor Method):**
+
+  ```bash
+  ros2 run surface under_study
+  ```
+
+- **Start DMM (Dynamic Modulation Method for Obstacle Avoidance):**
+
+  ```bash
+  ros2 run surface new_control
+  ```
+
+### 🤖 Multi-Agent Simulation
+
+- **Basic Multi-Agent Launch:**
+
+  ```bash
+  ros2 launch surface multi_agent_launch.py
+  ```
+
+- **Multi-Agent Navigation & Decision Making:**
+
+  ```bash
+  ros2 launch surface multi_agents_launch.py
+  ```
+
+### 📤 Task Publisher
+
+```bash
+ros2 run surface task_publisher
+```
+
+---
+
+## 📝 Notes
+
+- This project uses **ROS2 Jazzy**.
+- Make sure Gazebo and all necessary ROS2 dependencies are properly installed and sourced.
+
+---
+
+```
+
     
 
