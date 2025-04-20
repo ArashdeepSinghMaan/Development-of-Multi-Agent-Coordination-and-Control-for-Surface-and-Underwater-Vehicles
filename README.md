@@ -66,9 +66,9 @@ The core package for launching Gazebo simulations and running multi-agent system
 
 ---
 
-## 🔧 Installation & Build Instructions
+🔧 ## Installation & Build Instructions
 
-1. **Clone the packages into your ROS2 Jazzy workspace:**
+1. Clone the packages into your ROS2 Jazzy workspace:
 
    ```bash
    cd ~/your_ros2_ws/src
@@ -76,14 +76,14 @@ The core package for launching Gazebo simulations and running multi-agent system
    git clone <repo_url_for_surface>
    ```
 
-2. **Build the workspace:**
+2. Build the workspace:
 
    ```bash
    cd ~/your_ros2_ws
    colcon build
    ```
 
-3. **Source the workspace:**
+3. Source the workspace:
 
    ```bash
    source install/setup.bash
@@ -101,13 +101,13 @@ ros2 launch surface comb_new_launch.py
 
 ### 🧭 Run Control & Planning Nodes
 
-- **Start ROAM (Rotational Obstacle Avoidance Method):**
+- Start ROAM (Rotational Obstacle Avoidance Method):
 
   ```bash
   ros2 run surface under_study
   ```
 
-- **Start DMM (Dynamic Modulation Matrix Method for Obstacle Avoidance):**
+- Start DMM (Dynamic Modulation Matrix Method for Obstacle Avoidance):
 
   ```bash
   ros2 run surface new_control
