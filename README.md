@@ -51,17 +51,17 @@ complexity (e.g., obstacles, varying terrains) to validate the robustness of the
 
 This repository contains two main ROS2 packages:
 
-- **`message_type`**: Contains custom ROS2 message types.
-- **`surface`**: Contains launch files, nodes, and logic for simulation, control, and decision-making.
+- `message_type`: Contains custom ROS2 message types.
+- `surface`: Contains launch files, nodes, and logic for simulation, control, and decision-making.
 
 ---
 
 ## 📦 Packages Overview
 
-### `message_type`
+###`message_type`
 Defines all custom message types used throughout the project.
 
-### `surface`
+###`surface`
 The core package for launching Gazebo simulations and running multi-agent systems with obstacle avoidance and decision making.
 
 ---
