@@ -43,4 +43,4 @@ complexity (e.g., obstacles, varying terrains) to validate the robustness of the
 
 
 ### Video
-[![Watch the video](https://img.youtube.com/vi/sVQAPMuBPPs&list=PLeGlw_YNKerEtMuekMxKAprKBLYVwNjb-&index=4/maxresdefault.jpg)](https://www.youtube.com/watch?v=sVQAPMuBPPs&list=PLeGlw_YNKerEtMuekMxKAprKBLYVwNjb-&index=4)
+[![Watch the video](https://img.youtube.com/vi/sVQAPMuBPPs/maxresdefault.jpg)](https://www.youtube.com/watch?v=sVQAPMuBPPs&list=PLeGlw_YNKerEtMuekMxKAprKBLYVwNjb-&index=4)
