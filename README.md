@@ -44,3 +44,9 @@ complexity (e.g., obstacles, varying terrains) to validate the robustness of the
 
 ### Video
 [![Watch the video](https://img.youtube.com/vi/sVQAPMuBPPs/maxresdefault.jpg)](https://www.youtube.com/watch?v=sVQAPMuBPPs&list=PLeGlw_YNKerEtMuekMxKAprKBLYVwNjb-&index=4)
+
+### Details
+    message_type is a ros2 jazzy package including custom message types.
+    surface is ros2 jazzy package contains all the major launch files,and nodes.
+    
+
