@@ -40,3 +40,7 @@ Implementation Scheme
 on the physical vehicles, ensuring to integrate with sensors and actuators for real-time feedback.
 • Testing and Validation: Conduct extensive testing in controlled environments, gradually introducing
 complexity (e.g., obstacles, varying terrains) to validate the robustness of the control strategies.
+
+
+### Video
+[![Watch the video](https://img.youtube.com/vi/sVQAPMuBPPs&list=PLeGlw_YNKerEtMuekMxKAprKBLYVwNjb-&index=4/maxresdefault.jpg)](https://www.youtube.com/watch?v=sVQAPMuBPPs&list=PLeGlw_YNKerEtMuekMxKAprKBLYVwNjb-&index=4)
