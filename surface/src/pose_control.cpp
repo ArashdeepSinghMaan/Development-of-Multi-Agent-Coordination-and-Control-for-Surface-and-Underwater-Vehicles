@@ -96,10 +96,10 @@ double desired_pitch = std::atan2(-dz, horizontal_dist);  // Negative since dept
         // Compute control outputs
         double T, tau_yaw, tau_pitch;
         controller_.computeControl(
-            desired_pos, desired_yaw, desired_pitch,
-            current_x, yaw, pitch,
-            u, r, q, dt,
-            T, tau_yaw,tau_pitch
+            desired_pos, desired_yaw, 
+            current_x, yaw, 
+            u, r,  dt,
+            T, tau_yaw
         );
 
         // Map yaw torque to fin deflection

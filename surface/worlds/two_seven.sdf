@@ -17,8 +17,12 @@
         </density_change>
       </graded_buoyancy>
       <enable>wamv</enable>
-      <!--
+      <enable>plants</enable>
+      <enable>mountain_ground</enable>
+      <enable>ice_mountain</enable>
+      <enable>ice_layer</enable>
       <enable>box_neutral_buoyancy</enable>
+      <!--
       <enable>box_neutral_buoyancy_1</enable>
       <enable>box_neutral_buoyancy_2</enable>
       <enable>Concave_Obstacle</enable>
@@ -56,15 +60,46 @@
       <name>my_lrauv_modified</name>
       <pose>-8.700596655138476e-34 6.4099937955188849e-32 -2 -7.3006472416324187e-33 2.9254026042315276e-23 3.1280200002294176</pose>
     </include>
+    
+    <include>
+      <uri>/home/arash/Documents/Model/sea_floor.sdf</uri>
+      <name>plants</name>
+      <pose>-40 4 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/arash/Documents/Model/mountain_ground.sdf</uri>
+      <name>mountain_ground</name>
+      <pose>0 -1.40 -100.02 0 0 0</pose>
+    </include>
+    <!--
+       <include>
+      <uri>/home/arash/Documents/Model/ice_mountain.sdf</uri>
+      <name>ice_mountain</name>
+      <pose>-0.0009750 -1.40 -0.034202 3.14 -0.028501 3.14</pose>
+    </include>
+     <include>
+      <uri>/home/arash/Documents/Model/ice_mountain.sdf</uri>
+      <name>ice_mountain_2</name>
+      <pose>0 0 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>/home/arash/Documents/Model/ice_layer.sdf</uri>
+      <name>ice_layer</name>
+      <pose>0 0 0.0 0.0 0.0 0.0</pose>
+      <scale>0.001 0.001 0.001</scale>
+    </include>
+-->
     <model name='water_plane'>
       <static>true</static>
       <link name='link'>
         <visual name='water_plane'>
           <geometry>
+            
             <box>
-              <size>1000 1000 100</size>
+              <size>50 500 100</size>
               <normal>0 0 1</normal>
             </box>
+            
           </geometry>
           <material>
             <ambient>0 0 1 0.5</ambient>
@@ -87,7 +122,81 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>0 -4.9779529571533203 0 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+   <model name='land_plane'>
+      <static>true</static>
+      <link name='link'>
+        <visual name='land_plane'>
+          <geometry>
+            
+            <box>
+              <size>10 50 100</size>
+              <normal>0 0 1</normal>
+            </box>
+            
+          </geometry>
+          <material>
+  <ambient>0.76 0.70 0.50 1.0</ambient>
+  <diffuse>0.76 0.70 0.50 1.0</diffuse>
+  <specular>0.2 0.2 0.2 1.0</specular>
+</material>
+
+        </visual>
+        <pose>30 0 -50 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+     <model name='land_plane_2'>
+      <static>true</static>
+      <link name='link'>
+        <visual name='land_plane'>
+          <geometry>
+            
+            <box>
+              <size>40 80 100</size>
+              <normal>0 0 1</normal>
+            </box>
+            
+          </geometry>
+          <material>
+  <ambient>0.76 0.70 0.50 1.0</ambient>
+  <diffuse>0.76 0.70 0.50 1.0</diffuse>
+  <specular>0.2 0.2 0.2 1.0</specular>
+</material>
+
+        </visual>
+        <pose>-45 0 -50 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
       <self_collide>false</self_collide>
     </model>
     <model name='ground_plane'>
@@ -174,7 +283,8 @@
       <pose>0 0 0 0 0 -0.16809223025261216</pose>
       <self_collide>false</self_collide>
     </model>
-    <!--
+    
+   <!--
     <model name='box_neutral_buoyancy'>
       <pose>10 0.80000000000000004 -2 0 0 0</pose>
       <link name='body'>
@@ -223,6 +333,56 @@
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
+-->
+    <model name='ice_layer'>
+      <pose>15 0.80000000000000004 -1.8 0 0 0</pose>
+      <link name='body'>
+        <inertial>
+          <mass>320000</mass>
+          <pose>0 0 0.10000000000000001 0 0 0</pose>
+          <inertia>
+            <ixx>86.289078218599656</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>86.289078218599656</iyy>
+            <iyz>0</iyz>
+            <izz>5.0265482457436708</izz>
+          </inertia>
+        </inertial>
+        <visual name='body_visual'>
+          <geometry>
+            <box>
+              <size>20 8 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.400000006 0.200000003 0.100000001 1</ambient>
+            <diffuse>0.600000024 0.300000012 0.150000006 1</diffuse>
+            <specular>0.100000001 0.0500000007 0.0199999996 1</specular>
+          </material>
+        </visual>
+        <collision name='body_collision'>
+          <geometry>
+            <box>
+              <size>20 8.05 2</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+          <laser_retro>1</laser_retro>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+     <!--
     <model name='box_neutral_buoyancy_1'>
       <pose>10 3 -2 0 0 0</pose>
       <link name='body'>

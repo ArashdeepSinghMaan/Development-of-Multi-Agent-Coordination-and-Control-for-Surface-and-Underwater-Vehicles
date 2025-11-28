@@ -23,7 +23,7 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(gz_launch_path),
             launch_arguments={
-                'gz_args': [PathJoinSubstitution([pkg_surface, 'worlds/new.sdf'])],
+                'gz_args': [PathJoinSubstitution([pkg_surface, 'worlds/control.sdf'])],
                 'on_exit_shutdown': 'True'
             }.items(),
         ),
@@ -81,8 +81,8 @@ def generate_launch_description():
                 ('/world/wamv_world/model/my_lrauv_modified/link/base_link/sensor/air_pressure/air_pressure','my_lrauv_modified/air/press'),
                 ('/wamv/left/thruster/joint/cmd_pos','wamv/thrusters/left/angle' ),
                 ( '/wamv/right/thruster/joint/cmd_pos','wamv/thrusters/right/angle' ),
-               ('/model/my_lrauv_modified/joint/vertical_fins_cmd','my_lrauv_modified/submarine/horizontal/fin/pos'),
-                ('/model/my_lrauv_modified/joint/horizontal_fins_cmd','my_lrauv_modified/submarine/vertical/fin/pos'),
+               ('/model/my_lrauv_modified/joint/vertical_fins_cmd','my_lrauv_modified/submarine/yaw/fin/pos'),
+                ('/model/my_lrauv_modified/joint/horizontal_fins_cmd','my_lrauv_modified/submarine/pitch/fin/pos'),
                 ('/model/my_lrauv_modified/odometry','my_lrauv_modified/submarine/odometry'),
                 ('/close_one_to_sonar_front','my_lrauv_modified/submarine/Laser_scan_front'),
                 ( '/close_one_to_sonar_top','my_lrauv_modified/submarine/Laser_scan_top'),

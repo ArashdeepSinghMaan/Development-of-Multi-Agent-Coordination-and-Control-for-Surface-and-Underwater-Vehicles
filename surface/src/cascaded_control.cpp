@@ -1,6 +1,7 @@
 // cascaded_control.cpp
 
 #include "/home/arash/ros2_ws/src/surface/include/surface/cascaded_control.hpp"
+namespace auv{
 
 // ---------------- PID Controller ------------------
 
@@ -60,4 +61,5 @@ double CascadedController::get_desired_velocity() const {
 
 double CascadedController::get_control_input() const {
     return control_input_;
+}
 }

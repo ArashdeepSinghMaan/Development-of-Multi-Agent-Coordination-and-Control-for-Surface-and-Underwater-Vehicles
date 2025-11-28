@@ -16,6 +16,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(Eigen3 REQUIRED  NO_MODULE)
 find_package(message_type REQUIRED)
 
+
 include_directories(${EIGEN3_INCLUDE_DIRS})
 include_directories(include)
 
@@ -118,6 +119,17 @@ add_executable(aggregator_node src/agrregator_node.cpp)
 ament_target_dependencies(aggregator_node rclcpp message_type)
 target_link_libraries(aggregator_node)
 
+add_executable(cascaded_implementation src/cascaded_implementation.cpp )
+ament_target_dependencies(cascaded_implementation rclcpp std_msgs nav_msgs geometry_msgs tf2 sensor_msgs Eigen3 message_type)
+target_link_libraries(cascaded_implementation  )
+
+add_executable(pid_implementation src/pid_implementation.cpp  )
+ament_target_dependencies(pid_implementation rclcpp std_msgs nav_msgs geometry_msgs tf2 sensor_msgs Eigen3 message_type)
+target_link_libraries(pid_implementation  ) 
+
+add_executable(backsteping_implementation src/backsteping_implementation.cpp )
+ament_target_dependencies(backsteping_implementation rclcpp std_msgs nav_msgs geometry_msgs tf2 sensor_msgs Eigen3 message_type)
+target_link_libraries(backsteping_implementation  )
 
 
 # Install launch, models, and worlds directories
@@ -125,6 +137,7 @@ install(DIRECTORY
   launch
   models
   worlds
+  
   DESTINATION share/${PROJECT_NAME})
 
 # Install executables
@@ -146,6 +159,9 @@ install(TARGETS
   task_allocated_multi_agent
   roam_study
   multi_dmm
+  cascaded_implementation
+  pid_implementation
+  backsteping_implementation
   DESTINATION lib/${PROJECT_NAME})
 
 

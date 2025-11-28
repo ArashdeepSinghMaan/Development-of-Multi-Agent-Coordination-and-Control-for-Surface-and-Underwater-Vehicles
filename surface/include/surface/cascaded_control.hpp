@@ -198,15 +198,15 @@ public:
     //   T: computed thrust command.
     //   tau_yaw: computed yaw torque command.
     //   tau_pitch: computed pitch torque command.
-    void computeControl(double desired_pos, double desired_yaw, double desired_pitch,
-                        double current_pos, double current_yaw, double current_pitch,
-                        double u, double r, double q, double dt,
-                        double &T, double &tau_yaw, double &tau_pitch) {
+    void computeControl(double desired_pos, double desired_yaw, //double desired_pitch,
+                        double current_pos, double current_yaw, //double current_pitch,
+                        double u, double r,double dt,// double q, 
+                        double &T, double &tau_yaw ) {//double &tau_pitch
         double u_d = outerSurge_.computeDesiredVelocity(desired_pos, current_pos, dt);
         double r_d = outerYaw_.computeDesiredAngularRate(desired_yaw, current_yaw, dt);
-        double q_d = outerPitch_.computeDesiredAngularRate(desired_pitch, current_pitch, dt);
+       // double q_d = outerPitch_.computeDesiredAngularRate(desired_pitch, current_pitch, dt);
         innerController_.computeControl(u_d, u, r_d, r, dt, T, tau_yaw);
-        innerPitchController_.computeControl(q_d, q, dt, tau_pitch);
+       // innerPitchController_.computeControl(q_d, q, dt, tau_pitch);
     }
 
 private:
@@ -228,7 +228,7 @@ inline double computeFinDeflection(double tau_desired, double V) {
     const double l = 0.5;       // Lever arm [m]
     double V_eff = std::max(V, 0.1);
     double delta = (2.0 * tau_desired) / (0.5 * rho * V_eff * V_eff * S * CLA * l);
-    const double maxDelta = 3.00;  // Maximum fin deflection [rad]
+    const double maxDelta = 0.92;  // Maximum fin deflection [rad]
     return std::clamp(delta, -maxDelta, maxDelta);
 }
 

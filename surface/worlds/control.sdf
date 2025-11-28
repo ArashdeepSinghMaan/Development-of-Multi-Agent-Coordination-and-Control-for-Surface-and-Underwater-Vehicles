@@ -118,8 +118,10 @@
     <include>
       <uri>file:///home/arash/ros2_ws/src/dynamics_matrix/models/my_lrauv_modified</uri>
       <name>my_lrauv_modified</name>
-      <pose>1 2 -98 -3.6503300000000001e-33 1.4627e-23 8.6641400000000005e-30</pose>
+      <pose>0 0 -2 0 0 0</pose>
     </include>
+
+    <!--
     <model name='box'>
       <pose>3.4082620143890381 3.6928999423980713 -99.524398803710938 1.2294400333626676e-17 -1.8500499895956853e-17 -1.8203699633957007e-18</pose>
       <link name='box_link'>
@@ -214,6 +216,7 @@
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
+    -->
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>
