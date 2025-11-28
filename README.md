@@ -135,6 +135,13 @@ ros2 run surface task_publisher
 
 ---
 
+## Controller Node Names
+cascaded_implementation (For FeedBack Linearization)
+pid_implementation (For PID)
+backsteping_implementation (For Back Stepping)
+
+
+
 ## 📝 Notes
 
 - This project uses **ROS2 Jazzy**.
